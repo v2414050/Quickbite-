@@ -1,0 +1,134 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body styling */
+body {
+    background: #e6f7ff; /* light cyan background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: #00bcd4; /* cyan blue */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Main section */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Form styling */
+form {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Each input group */
+form div {
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #004d66; /* dark teal for contrast */
+}
+
+/* Inputs & Select */
+input, select {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #00bcd4;
+    box-shadow: 0 0 5px rgba(0,188,212,0.4);
+    outline: none;
+}
+
+/* Buttons */
+button {
+    padding: 0.6rem 1.2rem;
+    margin-right: 0.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Submit button */
+button[type="submit"] {
+    background: #00bcd4; /* cyan blue */
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background: #0097a7; /* darker cyan */
+}
+
+/* Reset button */
+button[type="reset"] {
+    background: #b2ebf2; /* light cyan */
+    color: #004d66;
+}
+
+button[type="reset"]:hover {
+    background: #80deea;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #f1f1f1;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    form {
+        padding: 1.5rem;
+        max-width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    form div {
+        margin-bottom: 1rem;
+    }
+}

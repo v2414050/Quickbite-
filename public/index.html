@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickBite - Campus Food Ordering</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Added for icons and better UI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav class="container.full_width" style="background-color: rgba(80, 79, 79, 0.658);">
+            <a href="index.html" class="logo"
+                style="background-color: rgba(0, 0, 0, 0.662);margin-left: 20px;width: 150px; text-align: center;">
+                <i class="fa-solid fa-burger"></i> QuickBite
+            </a>
+            <div class="nav-links">
+                <a href="#problem">The Problem</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#solution">Our Solution</a>
+                <a href="#features">Features</a>
+                <a href="#cafes">Cafeterias</a>
+            </div>
+            <div class="btn-group">
+                <button id="loginBtn" class="btn btn-primary">Login</button>
+                <button id="registerBtn" class="btn btn-primary">Register</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Skip the Lines. Digitize Your Lunch.</h1>
+                <p>Tired of endless cafeteria queues? With QuickBite, order your favorite food from your phone, pay
+                    instantly, and we'll notify you just when it's ready for pickup. More time for you, less time
+                    waiting!</p>
+                <div class="btn-group" style="justify-content: center;">
+                    <a href="#cafes" class="btn btn-primary"><i class="fa-solid fa-utensils"></i> View Cafeterias</a>
+                    <a href="#solution" class="btn btn-light"><i class="fa-solid fa-lightbulb"></i> Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="problem" style="background-color: bisque;">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fa-solid fa-triangle-exclamation"></i> Current Challenges in Campus Cafeterias</h2>
+                    <p>The existing manual process creates inefficiencies that affect the entire campus community.</p>
+                </div>
+                <div class="grid">
+                    <div style="text-align:center;">
+                        <h3>Long Queues & Wasted Time</h3>
+                        <p>Your break is short. Why spend it in a line?</p>
+                    </div>
+                    <div style="text-align:center;">
+                        <h3>Lack of Menu Transparency</h3>
+                        <p>Know what's available before you go.</p>
+                    </div>
+                    <div style="text-align:center;">
+                        <h3>Order Mismanagement</h3>
+                        <p>Get exactly what you ordered, every time.</p>
+                    </div>
+                    <div style="text-align:center;">
+                        <h3>Communication Gaps</h3>
+                        <p>Instant notifications mean no more waiting around.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" style="background-color: bisque;">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fa-solid fa-gears"></i> Your Meal in 4 Simple Steps</h2>
+                </div>
+                <div class="grid">
+                    <div style="text-align:center;">
+                        <h3>1. Choose Your Menu</h3>
+                        <p>Browse all campus menus in one place.</p>
+                    </div>
+                    <div style="text-align:center;">
+                        <h3>2. Place Your Order</h3>
+                        <p>Customize your meal and pick your time.</p>
+                    </div>
+                    <div style="text-align:center;">
+                        <h3>3. Pay Online</h3>
+                        <p>Fast, secure, and cashless payments.</p>
+                    </div>
+                    <div style="text-align:center;">
+                        <h3>4. Pick Up & Enjoy</h3>
+                        <p>We'll notify you when it's ready!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="solution" style="background-color: bisque;">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fa-solid fa-check-double"></i> The Solution is QuickBite</h2>
+                    <p>We built a centralized food-ordering platform for students and vendors alike.</p>
+                </div>
+                <div class="grid">
+                    <div class="solution-card">
+                        <h3>For Students</h3>
+                        <ul>
+                            <li>Access live menus</li>
+                            <li>Pre-order and skip queues</li>
+                            <li>Pay securely online</li>
+                            <li>Track orders in real-time</li>
+                        </ul>
+                    </div>
+                    <div class="solution-card">
+                        <h3>For Vendors</h3>
+                        <ul>
+                            <li>Manage all incoming orders</li>
+                            <li>Update items instantly</li>
+                            <li>Improve accuracy and speed</li>
+                            <li>Gain sales insights and analytics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cafes">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fa-solid fa-mug-hot"></i> Partner Cafeterias</h2>
+                </div>
+                <div class="grid">
+                    <a href="Nescafe.html" class="cafe-card-link">
+                        <div class="cafe-card">
+                            <img src="https://images.seeklogo.com/logo-png/26/1/nescafe-logo-png_seeklogo-265210.png"
+                                alt="Nescafe">
+                            <div class="card-content">
+                                <h3>Nescafe</h3>
+                                <p>It all starts with a Nescafé.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="CHE.html" class="cafe-card-link">
+                        <div class="cafe-card">
+                            <img src="https://placehold.co/400x300/F4A261/FFFFFF?text=CHE+cafe" alt="CHE cafe">
+                            <div class="card-content">
+                                <h3>CHE Cafe</h3>
+                                <p>Awaken your senses</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="urban.html" class="cafe-card-link">
+                        <div class="cafe-card">
+                            <img src="https://img77.uenicdn.com/image/upload/v1723654761/business/59a78c8d-e831-406d-b775-44e4adb5cffc.jpg"
+                                alt="Urban Vada Pav">
+                            <div class="card-content">
+                                <h3>Urban Vada Pav</h3>
+                                <p>Mumbai’s taste on your plate!</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="brio.html" class="cafe-card-link">
+                        <div class="cafe-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrcgwmsm7Ud-3wh6SrU_tQMqEyU59XFFeFiQ&s"
+                                alt="Brio">
+                            <div class="card-content">
+                                <h3>Brio</h3>
+                                <p>Fuel your body.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="amul.html" class="cafe-card-link">
+                        <div class="cafe-card">
+                            <img src="https://gallerypng.com/wp-content/uploads/2024/05/amul-logo-image-free-download.png"
+                                alt="Amul Masti">
+                            <div class="card-content">
+                                <h3>Amul Masti</h3>
+                                <p>The Taste of India</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="samocha.html" class="cafe-card-link">
+                        <div class="cafe-card">
+                            <img src="https://static.theprint.in/wp-content/uploads/2022/09/ANI-20220929110809.png"
+                                alt="Samocha">
+                            <div class="card-content">
+                                <h3>Samocha</h3>
+                                <p>Happiness Served in Crispy Wrappers!</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="cafe2004.html" class="cafe-card-link">
+                        <div class="cafe-card">
+                            <img src="https://media.licdn.com/dms/image/v2/D4E22AQF9VVSjkSjssw/feedshare-shrink_2048_1536/B4EZhw6gkMHIAo-/0/1754241044120?e=2147483647&v=beta&t=mFlytZ9cKldcSYy2b1B8XDpAYDhzwAPeCRp7yCP6j70"
+                                alt="Cafe 2004">
+                            <div class="card-content">
+                                <h3>Cafe 2004</h3>
+                                <p>Where every year feels like the first brew</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<div id="authModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-tabs">
+            <button id="customerTab" class="tab-btn active">Student</button>
+            <button id="vendorTab" class="tab-btn">Vendor</button>
+        </div>
+
+        <form id="loginForm">
+            <h2 id="formTitleLogin">Login</h2>
+
+            <div id="customerLoginFields">
+                <input type="email" placeholder="Student Email" required>
+            </div>
+
+            <div id="vendorLoginFields" class="hidden">
+                <input type="email" placeholder="Vendor Email">
+            </div>
+
+            <input type="password" placeholder="Password" required>
+            <button type="submit" class="btn btn-primary">Login</button>
+            <p class="form-switch">
+                Don't have an account? <a href="#" id="showRegister">Register here</a>
+            </p>
+        </form>
+
+        <form id="registerForm" class="hidden">
+            <h2 id="formTitleRegister">Create Account</h2>
+
+            <div id="customerRegisterFields">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Student Email" required>
+                <input type="text" placeholder="Student ID" required>
+            </div>
+
+            <div id="vendorRegisterFields" class="hidden">
+                <input type="text" placeholder="Cafeteria Name"> <input type="email" placeholder="Vendor Email"> <input
+                    type="tel" placeholder="Phone Number">
+            </div>
+
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <button type="submit" class="btn btn-primary">Register</button>
+            <p class="form-switch">
+                Already have an account? <a href="#" id="showLogin">Login here</a>
+            </p>
+        </form>
+    </div>
+</div>
+
+    <footer>
+        <div class="container">
+            <div class="grid">
+                <div>
+                    <h3>QuickBite</h3>
+                    <p>Reinventing how you eat on campus. Fast, easy, and delicious.</p>
+                </div>
+                <div>
+                    <h3>Project Group</h3>
+                    <ul>
+                        <li>Vikram Verma</li>
+                        <li>Vibhor Shukla</li>
+                        <li>Unnati Aghrwal</li>
+                        <li>Vaishnavi Vishwakarma</li>
+                        <li>Vaibhav Dixit</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contact Us</h3>
+                    <p>Are you a cafeteria wanting to join? We'd love to hear from you!</p>
+                    <a href="mailto:hello@quickbite.app">hello@quickbite.app</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 QuickBite. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FIXED LOGIN & REGISTER BUTTONS -->
+    
+
+    <script src="jss/script.js"></script>
+    <script src="jss/app.js"></script>
+</body>
+</html>

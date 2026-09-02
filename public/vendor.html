@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Dashboard - QuickBite</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* Specific styles for the dashboard list */
+        .dashboard-container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .order-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .order-info h3 {
+            margin: 0 0 5px 0;
+            color: #F97316;
+        }
+
+        .order-actions {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .time-input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="container" style="background-color: rgba(80, 79, 79, 0.658);">
+            <a href="index.html" class="logo" style="margin-left: 20px;">
+                <i class="fa-solid fa-burger"></i> QuickBite Vendor
+            </a>
+            <div class="btn-group">
+                <button onclick="logout()" class="btn btn-secondary">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        <h1>Incoming Orders</h1>
+        <div id="vendor-orders-list">
+            <p>Loading orders...</p>
+        </div>
+    </main>
+
+    <script src="jss/app.js"></script>
+    <script>
+        // Check if user is vendor
+        const user = JSON.parse(localStorage.getItem('currentUser'));
+        if (!user || user.user_type !== 'vendor') {
+            alert("Access Denied. Vendors only.");
+            window.location.href = 'index.html';
+        } else {
+            // Load orders on startup
+            loadVendorOrders(user.id);
+        }
+
+        function logout() {
+            localStorage.removeItem('currentUser');
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+
+</html>

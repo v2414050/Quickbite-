@@ -2,7 +2,7 @@
 // Database configuration
 class Database {
     private $host = "localhost";
-    private $db_name = "quickbite";
+    private $db_name = "quickbite_db";
     private $username = "root";
     private $password = "";
     public $conn;
